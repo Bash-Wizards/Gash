@@ -1,0 +1,72 @@
+   *"1shoot"*)
+     from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
+     who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+     gun=$(shuf -n 1 1gun.txt)
+     blam=$(echo "blam!!!")
+   echo "PRIVMSG $from :ACTION points revolver towards $who" >> $input
+   echo "PRIVMSG $from :ACTION $gun" >> $input
+   if [ $gun = $blam ]
+	then echo " KICK $from $who :you are dead bitch" >> $input
+   else echo "meh"
+   fi
+   ;;
+   *"2shoot"*)
+     from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
+     who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+     bun=$(shuf -n 1 2gun.txt)
+     blam=$(echo "blam!!!")
+   echo "PRIVMSG $from :ACTION points revolver towards $who" >> $input
+   echo "PRIVMSG $from :ACTION $bun" >> $input
+   if [ $bun = $blam ]
+	then echo " KICK $from $who :you are dead bitch" >> $input
+   else echo "meh"
+   fi
+   ;;
+   *"3shoot"*)
+     from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
+     who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+     sun=$(shuf -n 1 3gun.txt)
+     blam=$(echo "blam!!!")
+   echo "PRIVMSG $from :ACTION points revolver towards $who" >> $input
+   echo "PRIVMSG $from :ACTION $sun" >> $input
+   if [ $sun = $blam ]
+	then echo " KICK $from $who :you are dead bitch" >> $input
+   else echo "meh"
+   fi
+   ;;
+   *"4shoot"*)
+     from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
+     who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+     fun=$(shuf -n 1 4gun.txt)
+     blam=$(echo "blam!!!")
+   echo "PRIVMSG $from :ACTION points revolver towards $who" >> $input
+   echo "PRIVMSG $from :ACTION $fun" >> $input
+   if [ $fun = $blam ]
+	then echo " KICK $from $who :you are dead bitch" >> $input
+   else echo "meh"
+   fi
+   ;;
+   *"5shoot"*)
+     from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
+     who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+     pun=$(shuf -n 1 5gun.txt)
+     blam=$(echo "blam!!!")
+   echo "PRIVMSG $from :ACTION points revolver towards $who" >> $input
+   echo "PRIVMSG $from :ACTION $pun" >> $input
+   if [ $pun = $blam ]
+	then echo " KICK $from $who :you are dead bitch" >> $input
+   else echo "meh"
+   fi
+   ;;
+   *"6shoot"*)
+     from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
+     who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+     run=$(shuf -n 1 6gun.txt)
+     blam=$(echo "blam!!!")
+   echo "PRIVMSG $from :ACTION points revolver towards $who" >> $input
+   echo "PRIVMSG $from :ACTION $run" >> $input
+   if [ $run = $blam ]
+	then echo " KICK $from $who :you are dead bitch" >> $input
+   else echo "meh"
+   fi
+   ;;
